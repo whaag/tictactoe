@@ -19,7 +19,7 @@ $ sudo apt install libsdl2-dev
 maybe in the future.
 
 ## Authors
-* ** Eduardo Athayde** - *Initial Work* - [whaag](https://github.com/whaag)
+* **Eduardo Athayde** - *Initial Work* - [whaag](https://github.com/whaag)
 
 ## Acknowledgments
 * I did not actually invented the game itself.
