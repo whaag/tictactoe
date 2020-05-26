@@ -7,8 +7,10 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <SDL2/SDL_timer.h>
 #include "setup.h"
 #include "response.h"
+#include "draw.h"
 
 int main(void) {
   puts("Starting");
@@ -18,9 +20,16 @@ int main(void) {
   if (response.code != 0) {
     return EXIT_FAILURE;
   }
-
-  puts("All good here");
   
+  response = initialiseDraw();
+  
+  if (response.code != 0) {
+    return EXIT_FAILURE;
+  }
+  
+  SDL_Delay(5000);
+  
+  cleanUpDraw();
   cleanUp();
 
   return EXIT_SUCCESS;

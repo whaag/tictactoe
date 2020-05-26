@@ -7,10 +7,10 @@ CC := gcc
 CFLAGS := -I `sdl2-config --libs --cflags` -ggdb3 -O0 --std=c99 -Wall -lSDL2 -lSDL2_image -lm
 
 # Add source files
-SRCS := tictactoe.c setup.c 
+SRCS := tictactoe.c setup.c draw.c 
 
 # Add header files
-HDRS := setup.h
+HDRS := setup.h draw.h
 
 # Generate names of object files
 OBJS := $(SRCS:.c=.o)

@@ -15,7 +15,7 @@ Response initialise() {
   
   puts("before the thing");
   
-  if (SDL_Init(SDL_INIT_VIDEO) == 0) {
+  if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_TIMER) == 0) {
     response.code = 0;
     puts("SDL initalised succsessfuly");
   } else {
